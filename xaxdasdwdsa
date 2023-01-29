@@ -1,0 +1,191 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("IchigoatHub", "DarkTheme")
+
+
+--MAIN
+local Main = Window:NewTab("Main")
+local MainSection = Main:NewSection("Main")
+
+
+MainSection:NewButton("GreenLightRedLight-Complete", "COMPLETES THE ROUND", function() 
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-158.549866, 6.09999704, -638.323853, 0.99968183, -7.72648834e-10, 0.0252230801, 3.54148066e-09, 1, -1.09729072e-07, -0.0252230801, 1.09783485e-07, 0.99968183)
+end)
+
+MainSection:NewButton("StickFigtSafeZone", "TELEPORTS TO SAFE ZONE", function() 
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-25.2385273, -100.850014, -354.506744, 0.994031131, -3.11130832e-09, -0.109096654, 4.72401274e-09, 1, 1.45238879e-08, 0.109096654, -1.49525707e-08, 0.994031131)
+end)
+
+MainSection:NewButton("TAGSafeZone", "TELEPORTS TO SAFE ZONE", function() 
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-21.5230045, -138.800049, 776.067871, -1, -4.61211123e-08, 1.96159835e-05, -4.61208884e-08, 1, 1.14145493e-08, -1.96159835e-05, 1.14136443e-08, -1)
+end)
+
+MainSection:NewButton("GlassGameComplete", "COMPLETES THE ROUND", function() 
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-333.903534, -125.725075, -194.909317, -0.999609232, 3.41974413e-08, -0.0279522017, 3.20507212e-08, 1, 7.7247762e-08, 0.0279522017, 7.63216903e-08, -0.999609232)
+end)
+
+MainSection:NewButton("TeleportToDormitory", "TELEPORTS TO DORMITORY", function() 
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-37.6281433, -103.400024, -508.557251, -0.994501233, -6.47755201e-08, -0.104724988, -6.44403428e-08, 1, -6.58411325e-09, 0.104724988, 2.00605324e-10, -0.994501233)
+end)
+
+
+MainSection:NewButton("CompleteCandyRound", "Removes Candt", function()
+    game:GetService("ReplicatedStorage").Remotes.SugarHoneycomb:FireServer(true)
+     end)
+
+     MainSection:NewButton("Kill All", "Kills All Player But You Need Stick For it work.", function()
+        for i=1,15 do
+            for i,v in next,game.Players:GetPlayers()do
+                if v~=game.Players.LocalPlayer then
+                    game.ReplicatedStorage.Remotes.Replication:FireServer(v.Character.Humanoid,10)
+                end
+            end
+         end
+             end)
+
+
+MainSection:NewButton("TeleportToAllGlasses", "Teleports To All Glasses", function()
+    local plr = game.Players.LocalPlayer
+     local char = plr.Character
+     local spt = 0.1
+     char.HumanoidRootPart.CFrame = CFrame.new(-332,-125.6,-355.425)
+     wait(spt)
+     char.HumanoidRootPart.CFrame = CFrame.new(-342,-125.6,-355.425)
+     wait(spt)
+     char.HumanoidRootPart.CFrame = CFrame.new(-332,-125.6,-344.425)
+     wait(spt)
+     char.HumanoidRootPart.CFrame = CFrame.new(-342,-125.6,-344.425)
+     wait(spt)
+     char.HumanoidRootPart.CFrame = CFrame.new(-332,-125.6,-333.425)
+     wait(spt)
+     char.HumanoidRootPart.CFrame = CFrame.new(-342,-125.6,-333.425)
+     wait(spt)
+     char.HumanoidRootPart.CFrame = CFrame.new(-332,-125.6,-322.425)
+     wait(spt)
+     char.HumanoidRootPart.CFrame = CFrame.new(-342,-125.6,-322.425)
+     wait(spt)
+     char.HumanoidRootPart.CFrame = CFrame.new(-332,-125.6,-311.425)
+     wait(spt)
+     char.HumanoidRootPart.CFrame = CFrame.new(-342,-125.6,-311.425)
+     wait(spt)
+     char.HumanoidRootPart.CFrame = CFrame.new(-332,-125.6,-300.425)
+     wait(spt)
+     char.HumanoidRootPart.CFrame = CFrame.new(-342,-125.6,-300.425)
+     wait(spt)
+     char.HumanoidRootPart.CFrame = CFrame.new(-332,-125.6,-299.425)
+     wait(spt)
+     char.HumanoidRootPart.CFrame = CFrame.new(-342,-125.6,-299.425)
+     wait(spt)
+     char.HumanoidRootPart.CFrame = CFrame.new(-332,-125.6,-288.425)
+     wait(spt)
+     char.HumanoidRootPart.CFrame = CFrame.new(-342,-125.6,-288.425)
+     wait(spt)
+     char.HumanoidRootPart.CFrame = CFrame.new(-332,-125.6,-277.425)
+     wait(spt)
+     char.HumanoidRootPart.CFrame = CFrame.new(-342,-125.6,-277.425)
+     wait(spt)
+     char.HumanoidRootPart.CFrame = CFrame.new(-332,-125.6,-266.425)
+     wait(spt)
+     char.HumanoidRootPart.CFrame = CFrame.new(-342,-125.6,-266.425)
+     wait(spt)
+     char.HumanoidRootPart.CFrame = CFrame.new(-332,-125.6,-255.425)
+     wait(spt)
+     char.HumanoidRootPart.CFrame = CFrame.new(-342,-125.6,-255.425)
+     wait(spt)
+     char.HumanoidRootPart.CFrame = CFrame.new(-332,-125.6,-244.425)
+     wait(spt)
+     char.HumanoidRootPart.CFrame = CFrame.new(-342,-125.6,-244.425)
+     wait(spt)
+     char.HumanoidRootPart.CFrame = CFrame.new(-332,-125.6,-233.425)
+     wait(spt)
+     char.HumanoidRootPart.CFrame = CFrame.new(-342,-125.6,-233.425)
+     wait(spt)
+     char.HumanoidRootPart.CFrame = CFrame.new(-332,-125.6,-222.425)
+     wait(spt)
+     char.HumanoidRootPart.CFrame = CFrame.new(-342,-125.6,-222.425)
+     wait(spt)
+     char.HumanoidRootPart.CFrame = CFrame.new(-332,-125.6,-211.425)
+     wait(spt)
+     char.HumanoidRootPart.CFrame = CFrame.new(-342,-125.6,-211.425)
+     wait(spt)
+     char.HumanoidRootPart.CFrame = CFrame.new(-342,-118.6,-189.425)    -- 1.yan 2.yukarı aşağı 3.ileri geri
+     end)
+
+     local pulling = true
+MainSection:NewToggle("AutoPullRope", "AUTOPRESSESBUTTON", function(state)
+pulling = state
+ while wait(0) do
+if pulling == true then
+     game:GetService("ReplicatedStorage").TugRemote:FireServer() 
+     else
+     break   
+    end
+ end
+ end)
+
+
+ --PLAYER
+ local Player = Window:NewTab("Player")
+ local PlayerSection = Player:NewSection("Player")
+
+ PlayerSection:NewSlider("Walkspeed", "Speed!", 800, 16, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+PlayerSection:NewSlider("JumpPower", "Jump Height!", 500, 50, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+end)
+
+PlayerSection:NewButton("RESET WalkSpeed/JumpPower", "Reset Your Speed And Jump Power To Default", function()
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+end)
+
+PlayerSection:NewButton("Btools", "GIVES YOU BTOOLS", function() 
+    --[[
+A distribution of https://wearedevs.net/scripts
+Last updated August 2, 2021
+
+Description: Gives your player the old system of building tools
+
+Instruction: Inject this script into any game using a Lua executor like JJSploit. 
+]]
+
+backpack = game:GetService("Players").LocalPlayer.Backpack
+
+hammer = Instance.new("HopperBin")
+hammer.Name = "Hammer"
+hammer.BinType = 4
+hammer.Parent = backpack
+
+cloneTool = Instance.new("HopperBin")
+cloneTool.Name = "Clone"
+cloneTool.BinType = 3
+cloneTool.Parent = backpack
+
+grabTool = Instance.new("HopperBin")
+grabTool.Name = "Grab"
+grabTool.BinType = 2
+grabTool.Parent = backpack
+end)
+
+
+    --CREDITS
+    local Credits = Window:NewTab("Credits")
+    local CreditsSection = Credits:NewSection("Credits")
+
+    CreditsSection:NewButton("Ichigoat#8714", "Made By Ichigoat!", function()
+        print("Clicked")
+    end)
+
+    CreditsSection:NewButton("Annen#5588 Thank For Helping", "Thank For Helping!", function()
+        print("Clicked")
+    end)
+
+
+    --SETTINGS
+    local settings = Window:NewTab("Settings")
+    local settingsSection = settings:NewSection("Settings")
+settingsSection:NewKeybind("Menu on/off", "Menu on/off", Enum.KeyCode.RightShift, function()
+	Library:ToggleUI()
+end)
+settingsSection:NewLabel("verison1.2")
